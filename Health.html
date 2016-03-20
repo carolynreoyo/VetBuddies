@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
+<html lang="en">
   <head>
-  <!--  <meta name="viewport" content="initial-scale=1.0, user-scalable=no"> -->
+    <meta charset="utf-8">
+    <title>Resources for Veterans</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./bootstrap.css" media="screen">
-    <meta charset="utf-8">
-    <title>Resources for Veterans</title>
+    <link rel="stylesheet" href="./style.css" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
     <script>
 
      var _gaq = _gaq || [];
@@ -22,63 +28,8 @@
      })();
 
     </script>
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        height: 100%;
-      }
-      .controls {
-        margin-top: 10px;
-        border: 1px solid transparent;
-        border-radius: 2px 0 0 2px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        height: 32px;
-        outline: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      }
-
-      #pac-input {
-        background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 300px;
-      }
-
-      #pac-input:focus {
-        border-color: #4d90fe;
-      }
-
-      .pac-container {
-        font-family: Roboto;
-      }
-
-      #type-selector {
-        color: #fff;
-        background-color: #4d90fe;
-        padding: 5px 11px 0px 11px;
-      }
-
-      #type-selector label {
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 300;
-      }
-      #target {
-        width: 345px;
-      }
-    </style>
   </head>
   <body>
-    <!-- This is the Nav Bar ----------------->
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -164,99 +115,63 @@
         </div>
       </div>
     </div>
-<br>
-<br>
-<br>
 
     <div class="container">
-    <div class="container theme-showcase" role="main">
-    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-    <div id="map"></div>
-    <script> //HERE IS THE MAP!!!
-      // This example adds a search box to a map, using the Google Place Autocomplete
-      // feature. People can enter geographical searches. The search box will return a
-      // pick list containing a mix of places and predicted search terms.
+      <div class="container theme-showcase" role="main">
 
-      // This example requires the Places library. Include the libraries=places
-      // parameter when you first load the API. For example:
-      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-
-      function initAutocomplete() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
-          zoom: 13,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
-
-        // Create the search box and link it to the UI element.
-        var input = document.getElementById('pac-input');
-        var searchBox = new google.maps.places.SearchBox(input);
-        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-
-        // Bias the SearchBox results towards current map's viewport.
-        map.addListener('bounds_changed', function() {
-          searchBox.setBounds(map.getBounds());
-        });
-
-        var markers = [];
-        // Listen for the event fired when the user selects a prediction and retrieve
-        // more details for that place.
-        searchBox.addListener('places_changed', function() {
-          var places = searchBox.getPlaces();
-
-          if (places.length == 0) {
-            return;
-          }
-
-          // Clear out the old markers.
-          markers.forEach(function(marker) {
-            marker.setMap(null);
-          });
-          markers = [];
-
-          // For each place, get the icon, name and location.
-          var bounds = new google.maps.LatLngBounds();
-          places.forEach(function(place) {
-            var icon = {
-              url: place.icon,
-              size: new google.maps.Size(71, 71),
-              origin: new google.maps.Point(0, 0),
-              anchor: new google.maps.Point(17, 34),
-              scaledSize: new google.maps.Size(25, 25)
-            };
-
-            // Create a marker for each place.
-            markers.push(new google.maps.Marker({
-              map: map,
-              icon: icon,
-              title: place.name,
-              position: place.geometry.location
-            }));
-
-            if (place.geometry.viewport) {
-              // Only geocodes have viewport.
-              bounds.union(place.geometry.viewport);
-            } else {
-              bounds.extend(place.geometry.location);
-            }
-          });
-          map.fitBounds(bounds);
-        });
-      }
-
-    </script>
+  <br>
+  <br>
+  <br>
+  <br>
+     <div class="jumbotron">
+  <h1 class="text-center">Welcome to Resources for Veterans!</h1>
+  <p></p>
 </div>
+<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+<div id="map"></div>
+<iframe
+width="640"
+height="480"
+frameborder="0" style="border:0"
+src="https://www.google.com/maps/d/embed?mid=zKVL3OPtg0nA.kkrql94Rc2EQ" allowfullscreen>
+</iframe>
+<footer>
+  <div class="row">
+    <div class="col-lg-12">
+
+      <ul class="list-unstyled">
+        <li class="pull-right"><a href="#top">Back to top</a></li>
+        <li><a href="http://news.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
+        <li><a href="http://feeds.feedburner.com/bootswatch">RSS</a></li>
+        <li><a href="https://twitter.com/bootswatch">Twitter</a></li>
+        <li><a href="https://github.com/thomaspark/bootswatch/">GitHub</a></li>
+        <li><a href="../help/#api">API</a></li>
+        <li><a href="../help/#support">Support</a></li>
+      </ul>
+      <p>Made by <a href="http://thomaspark.co" rel="nofollow">Thomas Park</a>. Contact him at <a href="/cdn-cgi/l/email-protection#27534f484a4654674548485354504653444f0944484a"><span class="__cf_email__" data-cfemail="33475b5c5e524073515c5c4740445247505b1d505c5e">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a>.</p>
+      <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
+      <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+
+    </div>
+  </div>
+
+</footer>
+
+
 </div>
-
-
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjPXkENl3gJj3x1Rgs3T_D8h1w4iE2cbc&libraries=places&callback=initAutocomplete" async defer></script>
+<script src="./google.js"></script>
 <script src="./index_files/jquery.min.js"></script>
-<script> window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="./index_files/bootstrap.min.js"></script>
 <script src="./index_files/docs.min.js"></script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="./index_files/ie10-viewport-bug-workaround.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjPXkENl3gJj3x1Rgs3T_D8h1w4iE2cbc&libraries=places&callback=initAutocomplete"async defer></script>
-  </body>
+<!-- AIzaSyBSp_E-17iyFuQ1ugFMp5R9urClhTLKZ6Q
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../assets/js/custom.js"></script>
+<script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script>
+--></body>
 </html>
