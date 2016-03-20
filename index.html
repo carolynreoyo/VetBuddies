@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,11 +30,10 @@
     </script>
   </head>
   <body>
-
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="../" class="navbar-brand">Vet Buddies</a>
+          <a href="../" class="navbar-brand">Bootswatch</a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -42,23 +42,29 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li>
-              <a href="../help/">Health</a>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Health <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="../default/">Clinics</a></li>
+                <li><a href="../cerulean/">Hospitals</a></li>
+                <li><a href="../cosmo/">Mental Health</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Housing <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="../default/">Shelters</a></li>
+                <li><a href="../cerulean/">Housing Assistance</a></li>
+              </ul>
             </li>
             <li>
-              <a href="http://news.bootswatch.com">Housing</a>
+              <a href="http://news.bootswatch.com">Employment</a>
             </li>
             <li>
-              <a href="../help/">Employment</a>
+              <a href="http://news.bootswatch.com">Insurance</a>
             </li>
             <li>
-              <a href="../help/">Insurance</a>
-            </li>
-            <li>
-              <a href="../help/">Education</a>
-            </li>
-            <li>
-              <a href="../help/">Military Discounts</a>
+              <a href="http://news.bootswatch.com">Education</a>
             </li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Cerulean <span class="caret"></span></a>
@@ -92,8 +98,8 @@
       <div class="page-header" id="banner">
         <div class="row">
           <div class="col-lg-8 col-md-7 col-sm-6">
-            <h1>Veterans</h1>
-            <p class="lead">They bring me food <3</p>
+            <h1>Cerulean</h1>
+            <p class="lead">A calm blue sky</p>
           </div>
           <div class="col-lg-4 col-md-5 col-sm-6">
             <div class="sponsor">
@@ -118,7 +124,7 @@
           </div>
         </div>
       </div>
-<iframe src="https://www.google.com/maps/d/embed?mid=zKVL3OPtg0nA.kkrql94Rc2EQ" width="640" height="480"></iframe>
+
       <!-- Navbar
       ================================================== -->
       <div class="bs-docs-section clearfix">
@@ -1280,10 +1286,16 @@
 
 
     </div>
-
-
+    <script src="./index_files/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./index_files/bootstrap.min.js"></script>
+    <script src="./index_files/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./index_files/ie10-viewport-bug-workaround.js"></script>
+<!--
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../assets/js/custom.js"></script>
   <script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+-->
 </html>
