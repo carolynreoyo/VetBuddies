@@ -28,7 +28,8 @@ body >.navbar {
     padding: 0;
   }
   #map {
-    height: 100%;
+    width: 500px;
+    height: 400px;
   }
   .controls {
     margin-top: 10px;

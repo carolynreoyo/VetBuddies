@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLink>
+    <Link>
+      <href>http://sites.google.com/site/yoursitename/yourpagename/yourkmlfilename.kmz</href>
+      VetBuddies/outpatient clinics.kmz
+    </Link>
+  </NetworkLink>
+</kml>

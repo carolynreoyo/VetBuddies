@@ -150,7 +150,31 @@
 
               </footer>
             </div-->
-            <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+
+  <div id="map"></div>
+
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 28, lng: -81},
+          zoom: 5,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        });
+        var kmlLayer = new google.maps.KmlLayer();
+        var kmlUrl = 'https://www.google.com/maps/d/viewer?mid=zKVL3OPtg0nA.kkrql94Rc2EQ&ouput=kml';
+        var kmlOptions = {
+          suppressInfoWindows: false,
+          preserveViewport: true,
+          map: map
+          };
+          var kmlLayer = new google.maps.KmlLayer(kmlUrl, kmlOptions);
+      }
+    </script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+        <!-- old map stuff
+           <input id="pac-input" class="controls" type="text" placeholder="Search Box">
             <div id="map"></div>
             <script>
               // This example adds a search box to a map, using the Google Place Autocomplete
@@ -225,9 +249,10 @@
               }
 
             </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AlzaSyBjPXkENI3gJj3x1Rgs3T_D8h1w4iE2cbc&libraries=places&callback=initAutocomplete"
+          -->
+  <!--          script src="https://maps.googleapis.com/maps/api/js?key=AlzaSyBjPXkENI3gJj3x1Rgs3T_D8h1w4iE2cbc&libraries=places&callback=initAutocomplete"
                  async defer></script>
-
+-->
 
 
 <!-- Bootstrap core JavaScript

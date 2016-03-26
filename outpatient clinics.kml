@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>outpatient clinics</name>
+		<NetworkLink>
+			<name>Map</name>
+			<Link>
+				<href>http://www.google.com/maps/d/kml?forcekml=1&amp;mid=zKVL3OPtg0nA.kkrql94Rc2EQ&amp;lid=zKVL3OPtg0nA.kRaeGRfZsFJM</href>
+			</Link>
+		</NetworkLink>
+	</Document>
+</kml>
