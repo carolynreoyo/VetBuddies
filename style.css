@@ -1,18 +1,27 @@
 <style>
 
 
-body>.navbar-transparent {
+body >.navbar-transparent {
     background-color: transparent;
 }
-body>.navbar {
+body >.navbar {
     -webkit-transition: background-color .3s ease-in;
     transition: background-color .3s ease-in;
 }
 #splash {
-  background: url(flag.jpg) no-repeat center top fixed;
+  background: url(vetdayflag.jpg) no-repeat center top fixed;
   background-size: cover;
 }
 
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  text: color="black";
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
   html, body {
     height: 100%;
     margin: 0;
