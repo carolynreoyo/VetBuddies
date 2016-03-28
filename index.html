@@ -227,17 +227,38 @@
 
 
         // fusion table id
-        // 13IQ96U4Ro0U94ilZmMfrbIl3YkeDxB1QZrUuq4Dn
+        // 13IQ96U4Ro0U94ilZmMfrbIl3YkeDxB1QZrUuq4Dn (old one)
+        // 11OYDh72qzhIQ-8YHBqUxEA5tUlXN_2GCDF5tMdTt
         var layer = new google.maps.FusionTablesLayer({
           query: {
             //select: '\'Geocodable address\'',
               select: '\'Address\'',
-            from: '13IQ96U4Ro0U94ilZmMfrbIl3YkeDxB1QZrUuq4Dn'
-          }
+            from: '11OYDh72qzhIQ-8YHBqUxEA5tUlXN_2GCDF5tMdTt'
+          },
+          styles: [{
+            markerOptions: {
+              iconName: 'small_red'
+            }
+          }, {
+            where: 'Type > 1',
+            markerOptions: {
+              iconName: 'small_blue'
+            }
+          }, {
+            where: 'Type > 2',
+            markerOptions: {
+              iconName: 'measle_white'
+            }
+          }, {
+            where: 'Type > 3',
+            markerOptions: {
+              iconName: 'small_yellow'
+            }
+          }]
         });
         layer.setMap(map);
 
-        // Couldn't get KML stuff below working so added the fusion table stuff above 
+        // Couldn't get KML stuff below working so added the fusion table stuff above
 
         //kmlLayer = new google.maps.KmlLayer({
         //  url: 'http://carolynreoyo.github.io/VetBuddies/everything.kml',
