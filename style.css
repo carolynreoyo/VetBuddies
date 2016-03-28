@@ -1,9 +1,7 @@
 <style>
 
 
-.nav.navbar-nav.navbar-right li a {
-  color: #fff;
-}
+
 body >.navbar {
     -webkit-transition: background-color .3s ease-in;
     transition: background-color .3s ease-in;
@@ -19,11 +17,7 @@ body >.navbar {
   color: #fff;
 }
 /* =============== CONTAINER STYLES ========= */
-.container {
-  width: 960px;
-  margin: 0;
-  overflow: hidden;
-}
+
 
 .jumbotron {
   text-align: center;
