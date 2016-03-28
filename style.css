@@ -1,16 +1,28 @@
 <style>
 
 
-body >.navbar-transparent {
-    background-color: transparent;
+.nav.navbar-nav.navbar-right li a {
+  color: #fff;
 }
 body >.navbar {
     -webkit-transition: background-color .3s ease-in;
     transition: background-color .3s ease-in;
 }
+/* ============= PAGE SECTIONS ============= */
 #splash {
   background: url(vetdayflag.jpg) no-repeat center top fixed;
   background-size: cover;
+}
+#overview {
+  padding: 40px 0 60px 0;
+  background-color: #333;
+  color: #fff;
+}
+/* =============== CONTAINER STYLES ========= */
+.container {
+  width: 960px;
+  margin: 0;
+  overflow: hidden;
 }
 
 .jumbotron {
@@ -52,6 +64,7 @@ body >.navbar {
     text-overflow: ellipsis;
     width: 300px;
   }
+
 
   #pac-input:focus {
     border-color: #4d90fe;
