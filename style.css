@@ -2,9 +2,8 @@
 
 
 
-body >.navbar {
-    -webkit-transition: background-color .3s ease-in;
-    transition: background-color .3s ease-in;
+.nav.navbar-nav.navbar-right li a {
+  color: blue;
 }
 /* ============= PAGE SECTIONS ============= */
 #splash {

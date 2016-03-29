@@ -4503,11 +4503,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #1995dc;
 }
 .navbar-default .navbar-brand {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: none;
 }
 .navbar-default .navbar-text {
@@ -5692,9 +5692,9 @@ button.list-group-item-danger.active:focus {
   border-color: #dddddd;
 }
 .panel-default > .panel-heading {
-  color: #555555;
-  background-color: #f5f5f5;
-  border-color: #dddddd;
+  color: #555555 !important;
+  background-color: #f5f5f5 !important;
+  border-color: #dddddd !important;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #dddddd;
@@ -5710,9 +5710,9 @@ button.list-group-item-danger.active:focus {
   border-color: #dddddd;
 }
 .panel-primary > .panel-heading {
-  color: #ffffff;
-  background-color: #2fa4e7;
-  border-color: #dddddd;
+  color: #ffffff !important;
+  background-color: #2fa4e7 !important;
+  border-color: #dddddd !important;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #dddddd;
@@ -5728,9 +5728,9 @@ button.list-group-item-danger.active:focus {
   border-color: #dddddd;
 }
 .panel-success > .panel-heading {
-  color: #468847;
-  background-color: #73a839;
-  border-color: #dddddd;
+  color: #468847 !important;
+  background-color: #73a839 !important;
+  border-color: #dddddd !important;
 }
 .panel-success > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #dddddd;
@@ -5746,9 +5746,9 @@ button.list-group-item-danger.active:focus {
   border-color: #dddddd;
 }
 .panel-info > .panel-heading {
-  color: #3a87ad;
-  background-color: #033c73;
-  border-color: #dddddd;
+  color: #3a87ad !important;
+  background-color: #033c73 !important;
+  border-color: #dddddd !important;
 }
 .panel-info > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #dddddd;
@@ -5764,9 +5764,9 @@ button.list-group-item-danger.active:focus {
   border-color: #dddddd;
 }
 .panel-warning > .panel-heading {
-  color: #c09853;
-  background-color: #dd5600;
-  border-color: #dddddd;
+  color: #c09853 !important;
+  background-color: #dd5600 !important;
+  border-color: #dddddd !important;
 }
 .panel-warning > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #dddddd;
@@ -5782,9 +5782,9 @@ button.list-group-item-danger.active:focus {
   border-color: #dddddd;
 }
 .panel-danger > .panel-heading {
-  color: #b94a48;
-  background-color: #c71c22;
-  border-color: #dddddd;
+  color: #b94a48 !important;
+  background-color: #c71c22 !important;
+  border-color: #dddddd !important;
 }
 .panel-danger > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #dddddd;
