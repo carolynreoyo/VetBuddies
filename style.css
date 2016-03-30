@@ -7,13 +7,22 @@
 }
 /* ============= PAGE SECTIONS ============= */
 #splash {
-  background: url(vetdayflag.jpg) no-repeat center top fixed;
+  background: url(red.jpg) no-repeat center top fixed;
   background-size: cover;
+  color: #fff;
+  /*text-shadow: 2px 2px #FF0000;*/
 }
 #overview {
+  background: url(turquoise.jpg) repeat center fixed;
   padding: 40px 0 60px 0;
-  background-color: #333;
+  background-size: cover;
   color: #fff;
+}
+#nursing {
+  background-color: #ecf0f1;
+  padding: 40px 0 60px 0;
+  background-size: cover;
+
 }
 /* =============== CONTAINER STYLES ========= */
 
